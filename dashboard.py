@@ -101,7 +101,7 @@ if model:
         default_img_path = "train_batch0.jpg"
         if os.path.exists(default_img_path):
             input_image = Image.open(default_img_path)
-            image_name = default_img_path (Mặc định)
+            image_name = default_img_path # (Mặc định)
             st.sidebar.caption(f"Đang dùng ảnh mặc định: {default_img_path}")
         else:
             st.warning("⚠️ Vui lòng tải ảnh lên từ Thanh bên (Sidebar) để bắt đầu phân tích.")
