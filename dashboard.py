@@ -37,7 +37,7 @@ def load_yolov5_model(weights_path):
     with st.spinner('Đang tải mô hình AI... Vui lòng đợi.'):
         try:
             # Load model custom
-            model = torch.hub.load('ultralytics/yolov5', 'custom', path=weights_path, force_reload=False)
+            model = torch.hub.load('ultralytics/yolov5', 'custom', path=weights_path, force_reload=True)
             return model
         except Exception as e:
             st.error(f"❌ Lỗi khi load mô hình: {e}")
